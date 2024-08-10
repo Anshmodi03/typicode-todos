@@ -1,0 +1,113 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  line-height: 1.6;
+  padding: 40px;
+    background: linear-gradient(155deg,#ffffffad ,#00b7ff8c ,#8e13c7b0 ,#086bffa1 );
+    background-size: 400% 300%;
+    animation: gradient-animation 5s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+header {
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 24px;
+  text-shadow: 6px 0px 12px #646264;
+}
+
+button {
+  padding: 15px 10px;
+  background: salmon;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-radius: 50%;
+  width: 100px;
+  border: 1px solid transparent;
+  transition: all 1s ease-in-out;
+  position: relative;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-image: linear-gradient(345deg, #000000 20%, #ffffff 40%);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+input[type='text'] {
+    text-align: start;
+  padding: 5px;
+  border-radius: 8px;
+  width: 300px;
+  height: 35px;
+  border: 1px solid transparent;
+  margin-right: 5px;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+::placeholder {
+    color: rgb(255, 0, 149);
+    opacity: 1;
+    font-weight: 600;
+  }
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  justify-items:baseline;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+#todo-list > div {
+  border: 1px #666 transparent;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 30px;
+  margin: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(20deg, #fd7979 20% , rgb(255, 91, 255) 60%);
+  transition: background-image 0.9s ease;
+}
+
+#todo-list .done{
+    background-image: linear-gradient(20deg, #f31fbe9c 20% , rgb(255, 255, 255) 60%);
+    text-decoration-thickness: 2px;
+}
