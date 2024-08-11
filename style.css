@@ -30,8 +30,8 @@ header {
 
 .mainpart {
 background: rgba(189, 129, 176, 1.0);
-background: conic-gradient(from 225deg, rgba(189, 129, 176, 1.0), rgb(3, 66, 150));
-background: linear-gradient(from 225deg, rgba(189, 129, 176, 1.0), rgb(3, 66, 150));
+background-image: conic-gradient(from 225deg, rgba(189, 129, 176, 1.0), rgb(3, 66, 150));
+/* background-image: linear-gradient(from 225deg, rgba(189, 129, 176, 1.0), rgb(3, 66, 150)); */
 justify-content: center;
 align-items: center;
 text-align: center;
